@@ -28,12 +28,12 @@ Note - Ubah xxx sesuai dengan versi windows yang kalian pilih.
 
 ```jsx
 qemu-system-x86_64 \
--m 3G \
+-m 7G \
 -cpu host \
 -enable-kvm \
 -boot order=d \
--drive file=windows2xxx.iso,media=cdrom \
--drive file=windows2xxx.img,format=raw,if=virtio \
+-drive file=windows2019.iso,media=cdrom \
+-drive file=windows2019.img,format=raw,if=virtio \
 -drive file=virtio-win.iso,media=cdrom \
 -device usb-ehci,id=usb,bus=pci.0,addr=0x4 \
 -device usb-tablet \
