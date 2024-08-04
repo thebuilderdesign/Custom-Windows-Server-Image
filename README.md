@@ -28,12 +28,12 @@ Note - Ubah xxx sesuai dengan versi windows yang kalian pilih.
 
 ```jsx
 qemu-system-x86_64 \
--m 7G \
+-m 8G \
 -cpu host \
 -enable-kvm \
 -boot order=d \
--drive file=windows2019.iso,media=cdrom \
--drive file=windows2019.img,format=raw,if=virtio \
+-drive file=windows2022.iso,media=cdrom \
+-drive file=windows2022.img,format=raw,if=virtio \
 -drive file=virtio-win.iso,media=cdrom \
 -device usb-ehci,id=usb,bus=pci.0,addr=0x4 \
 -device usb-tablet \
@@ -74,7 +74,7 @@ cp windows2019.gz /var/www/html/
 Buka browser, download dengan mengakses VPSnya. Ubah yyy dengan ip kalian, xxx untuk versi Windows Server yang kalian pilih
 
 ```jsx
-http://yyy.yyy.yyy/windows2019.gz
+http://yyy.yyy.yyy/windows2022.gz
 ```
 
 ## 5. Setting Agar Bisa Diakses via RDP :
@@ -82,6 +82,6 @@ http://yyy.yyy.yyy/windows2019.gz
 Create droplet baru dan ikuti petunjuk yang ada di YouTube
 
 ```jsx
-wget -O- --no-check-certificate http://yyy.yyy.yyy/windows2019.gz | gunzip | dd of=/dev/vda
+wget -O- --no-check-certificate http://yyy.yyy.yyy/windows2022.gz | gunzip | dd of=/dev/vda
 ```
 
