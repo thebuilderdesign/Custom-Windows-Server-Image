@@ -50,7 +50,7 @@ Buka RealVNC Viewer, masukkan IP VPS kalian. Setelah itu ikuti langkah langkah y
 Kompress Windows Server Img kalian
 
 ```jsx
-dd if=windows2019.img | gzip -c>windows2019.gz
+dd if=windows2022.img | gzip -c>windows2022.gz
 ```
 
 Install Apache
@@ -68,7 +68,7 @@ sudo ufw allow 'Apache'
 Pindahkan file Windows Server Image kalian biar bisa di download
 
 ```powershell
-cp windows2019.gz /var/www/html/
+cp windows2022.gz /var/www/html/
 ```
 
 Buka browser, download dengan mengakses VPSnya. Ubah yyy dengan ip kalian, xxx untuk versi Windows Server yang kalian pilih
