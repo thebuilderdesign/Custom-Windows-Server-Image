@@ -28,7 +28,7 @@ Note - Ubah xxx sesuai dengan versi windows yang kalian pilih.
 
 ```jsx
 qemu-system-x86_64 \
--m 7G \
+-m 8G \
 -cpu host \
 -enable-kvm \
 -boot order=d \
