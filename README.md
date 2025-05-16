@@ -24,7 +24,7 @@ Jalankan installernya
 
 ## 2. Run QEMU :
 
-Note - Ubah xxx sesuai dengan versi windows yang kalian pilih.
+Note - Ubah xxx sesuai dengan versi windows yang kalian pilih sebagai contoh saya pilih windows2019.
 
 ```jsx
 qemu-system-x86_64 \
@@ -50,7 +50,7 @@ Buka RealVNC Viewer, masukkan IP VPS kalian. Setelah itu ikuti langkah langkah y
 Kompress Windows Server Img kalian
 
 ```jsx
-dd if=windows2019.img | gzip -c>windows2022.gz
+dd if=windows2019.img | gzip -c>windows2019.gz
 ```
 
 Install Apache
@@ -82,6 +82,6 @@ http://yyy.yyy.yyy/windows2019.gz
 Create droplet baru dan ikuti petunjuk yang ada di YouTube
 
 ```jsx
-wget -O- --no-check-certificate http://yyy.yyy.yyy/windows2022.gz | gunzip | dd of=/dev/vda
+wget -O- --no-check-certificate http://yyy.yyy.yyy/windows2019.gz | gunzip | dd of=/dev/vda
 ```
 
