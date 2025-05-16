@@ -24,7 +24,7 @@ Jalankan installernya
 
 ## 2. Run QEMU :
 
-Note - Ubah xxx sesuai dengan versi windows yang kalian pilih sebagai contoh saya pilih windows2019.
+Note - Ubah xxx sesuai dengan versi windows yang kalian pilih, sebagai contoh saya pilih windows2019.
 
 ```jsx
 qemu-system-x86_64 \
@@ -42,8 +42,6 @@ qemu-system-x86_64 \
 PENTING : Enter 2x
 
 ## 3. Akses via VNC :
-
-Buka RealVNC Viewer, masukkan IP VPS kalian. Setelah itu ikuti langkah langkah yang ada di video.
 
 ## 4. Download File Custom Windows Server Kalian :
 
@@ -78,8 +76,6 @@ http://yyy.yyy.yyy/windows2019.gz
 ```
 
 ## 5. Setting Agar Bisa Diakses via RDP :
-
-Create droplet baru dan ikuti petunjuk yang ada di YouTube
 
 ```jsx
 wget -O- --no-check-certificate http://yyy.yyy.yyy/windows2019.gz | gunzip | dd of=/dev/vda
